@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: mi-aplicacion
+  namespace: juan2space
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/mi-proyecto/mi-aplicacion:v1  # Cambia esto por la imagen de tu aplicación
+          env:
+            - name: MY_ENV_VAR
+              value: "value"
