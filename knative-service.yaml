@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-        - image: gcr.io/mi-proyecto/mi-aplicacion:v1  # Cambia esto por la imagen de tu aplicación
+        - image: nginx:latest  # Imagen de NGINX desde Docker Hub
           env:
             - name: MY_ENV_VAR
               value: "value"
